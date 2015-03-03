@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby 
 
-#不允许使用四则运算实现两个正数字的和
+# 不允许使用四则运算实现两个数字的和
+# 注意在某些例子中，有可能由于循环的次数超过系统所限制的次数，从而抛出“stack level too deep (SystemStackError)” 异常
 
 def recuadd(a, b)
   return a unless b != 0
